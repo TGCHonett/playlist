@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>playlist</title>
+  <style>
+    body {
+      /* Путь к картинке фона */
+      background-image: url('фон4.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-color: #121212;
+      margin: 0;
+      padding: 20px 0;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Главная обёртка, которая задаёт одинаковую аккуратную ширину для всех элементов */
+    .wrapper {
+      max-width: 700px; /* Здесь регулируется общая ширина всего содержимого */
+      margin: 0 auto;   /* Центрирует контейнер на странице */
+      padding: 0 15px;
+    }
+
+    h1.main-title {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 5px;
+      font-size: 50px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #d4d4d4;
+      margin-top: 0;
+      font-size: 20px;
+      font-family: 'Didot', 'Didot LT STD', Garamond, 'Times New Roman', serif;
+    }
+
+    p.subtitle a {
+      color: #d90d1b; 
+      text-decoration: underline;
+    }
+
+    p.subtitle a:hover {
+      color: #ffffff;
+    }
+
+    /* Блок с GIF: выравнивает баннер по левому краю */
+    .gif-container {
+      display: flex;
+      justify-content: flex-start; /* Сдвигает гифку влево */
+      margin: 25px 0;
+    }
+
+    .banner-gif {
+      width: 100%;
+      max-width: 700px; /* Уменьшенная ширина гифки, чтобы справа оставалось место */
+      border-radius: 16px;
+      border: 3px solid #545454;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Заголовки секций (Albums, Tracks) */
+    .section-title {
+      color: #ffffff;
+      font-size: 32px;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .playlist-container {
+      margin-top: 15px;
+    }
+
+    .track-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    /* Карточка плашки */
+    .track {
+      background-color: #4a4848;
+      padding: 12px 18px;
+      border-radius: 12px;
+      transition: background-color 0.2s ease;
+    }
+
+    .track:hover {
+      background-color: #686767;
+    }
+
+    .track-details .song {
+      font-size: 22px;
+      font-weight: NEW YORK;
+      color: #ffffff;
+    }
+
+    .track-details .artist {
+      font-size: 13px;
+      color: #dddddd;
+      font-family: 'MV Boli', cursive, serif;
+      margin-top: 2px;
+    }
+
+    /* Фиты */
+    .track-details .feat {
+      color: #7fffd4 !important; /* Зелёный акцентный цвет */
+      font-size: 14px;
+      font-style: italic;
+      font-family: 'Candara', sans-serif;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Общий контейнер, который держит правильную ширину всей страницы -->
+  <div class="wrapper">
+
+    <!-- Заголовок и подзаголовок -->
+    <h1 class="main-title">𝕸𝖞 𝖕𝖑𝖆𝖞𝖑𝖎𝖘𝖙</h1>
+    <p class="subtitle">The website was created with the support of <a href="https://t.me/ZAStriHken_A" target="_blank">Tamagotchi.</a></p>
+
+    <!-- Блок с гифкой, сдвинутой влево -->
+    <div class="gif-container">
+      <img src="cover.gif" class="banner-gif" alt="RESTRICTED">
+    </div>
+
+    <!-- Секция Альбомов -->
+    <h2 class="section-title">𝐀𝐋𝐁𝐔𝐌𝐒</h2>
+
+    <div class="playlist-container">
+      <!-- Карточка 1 -->
+      <a href="https://www.youtube.com/watch?v=ne7Nyvspdhs&list=OLAK5uy_kDF3BzqXADbgsHx3oU5n1f2e1wwa0oZo4" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">светлая сторона</div>
+            <div class="artist">MZLFF • 15 tracks</div>
+            <div class="feat">feat. Екатерина Яшникова, feat. BOOKER, feat. Слава КПСС, feat. CMH, feat. playingtheangel, feat. STED.D</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Карточка 2 -->
+      <a href="https://www.youtube.com/watch?v=x2swiQiLyq8&list=OLAK5uy_mwHvsSk68Vy8eOvS1ht3O6G7O6bRH_hFQ" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">потерянный мир</div>
+            <div class="artist">MZLFF • 5 tracks</div>
+            <div class="feat">feat. pyrokinesis</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Карточка 3 -->
+      <a href="https://www.youtube.com/watch?v=HIl0jzLga58&list=PLMevcTN3zskeYXgtiERczVoj9XnOeWeZj" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">PHANTASMAGORIA</div>
+            <div class="artist">MZLFF • 8 tracks</div>
+          </div>
+        </div>
+      </a>
+
+  
+      <!-- Карточка 4 -->
+      <a href="https://www.youtube.com/watch?v=Fk9oHUXlq34&list=OLAK5uy_n_ckMXtPMORgwA0vo3B-dwHAoySRhXVMI" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">WOMANIZER</div>
+            <div class="artist">SQWOZ BAB • 14 tracks</div>
+       <div class="feat">feat. Воровайки, feat. Lida</div>
+          </div>
+        </div>
+      </a>
+
+    <!-- Карточка 5 -->
+      <a href="https://www.youtube.com/watch?v=Cp31A_iqoDw&list=PLBnJv6rImVe9QqeefeqgHtc9WAMxBMu4Z"_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Mutter</div>
+            <div class="artist">Rammstein • 11 tracks</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 6 -->
+      <a href="https://www.youtube.com/watch?v=pURfo4ey5y0&list=PLZlK-YdlGKbYJ8PMIyO1RZdUgie5fc3wT"_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">JASP.ER LONGPLAY</div>
+            <div class="artist">RISER MUSIC • 4 tracks</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 7 -->
+       <a href="https://www.youtube.com/watch?v=_oeHKni5_c4&list=OLAK5uy_mcVSicVSqOZ-iPsBnXIm7c2yyjHdh3Eow"_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Судный день</div>
+            <div class="artist">ЛСП • 14 tracks</div>
+          </div>
+        </div>
+      </a>
+
+ <!-- Секция Отдельных Треков  -->
+    <h2 class="section-title">𝐓𝐑𝐀𝐂𝐊𝐒</h2>
+
+    <div class="playlist-container">
+<!-- Карточка 1 -->
+      <a href="https://youtu.be/UBbMnphYv9Y?si=LsakE6_RGRUwvoTS" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Hass Und Liebe</div>
+            <div class="artist">Miss Construction</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 2 -->
+      <a href="https://youtu.be/Suc0ZKKDYRQ?si=JehzZAF4AJ9PwGOs" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">О том, как девочка Алёна стала женщиной</div>
+            <div class="artist">GSPD</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 3 -->
+      <a href="https://youtu.be/EGLoIaHwKfE?si=zsqzzvV9gTWDCLZq" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Касета</div>
+            <div class="artist">SadSvit</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 4 -->
+      <a href="https://youtu.be/MNkl76IBWhA?si=jP_ymtcdkP9YVwNB" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Як ніколи</div>
+            <div class="artist">Океан Ельзи</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 5 -->
+      <a href="https://youtu.be/_MGqdK5Jzzg?si=eEOTZgIYsECTQNU1" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">ЧУЖІЮ Я</div>
+            <div class="artist">Дім Культури NAZVA</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 6 -->
+      <a href="https://youtu.be/T24rF_x0TmQ?si=cShA7RypOEDvPz86" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">ヤラララ</div>
+            <div class="artist">AnythingBecomeMoe</div>
+           <div class="feat">feat. 重音テト</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 7 -->
+      <a href="https://youtu.be/Pe6xysvvr9k?si=--s_8SFPIvAAxofP" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">БСЛ</div>
+            <div class="artist">Stintik</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 8 -->
+      <a href="https://youtu.be/_61BkXti1_Q?si=_0G44hkwCQQVmnRA" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Turbo</div>
+            <div class="artist">Big Baby Tap</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 9 -->
+      <a href="https://youtu.be/JBqluwkvr5s?si=l3DZ5WMEzbeq1xY0" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">смартик</div>
+            <div class="artist">илюха реп</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 10 -->
+      <a href="https://youtu.be/wgOBlO0ncSk?si=HF12mg9k7gxRSkvi" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Родной город</div>
+            <div class="artist">НЕРВЫ</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 11 -->
+      <a href="https://youtu.be/x5cMa7MKz9s?si=k_ND-YJw-dYxdMTT" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Destroy Love</div>
+            <div class="artist">Khaotung Thanawat</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 12 -->
+      <a href="https://youtu.be/VTpWcukzFpU?si=EM7Uvi4wpfLDKBSB" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">ILIKEAPORN!</div>
+            <div class="artist">2RBINA 2RISTA</div>
+<div class="feat">feat. КАТЯ САМБУКА</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 13 -->
+      <a href="https://youtu.be/EPx1ApUsqRY?si=tC_Do_zdmnlO7JPh" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">ЭРОНДОНДОН</div>
+            <div class="artist">SHUKASHA</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 14 -->
+      <a href="https://youtu.be/2ROnuyg_YbA?si=NKdaMJMewlW7SDPb" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">He's My Man</div>
+            <div class="artist">Luvcat</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 15 -->
+      <a href="https://youtu.be/g1BaGm7syr4?si=LTjJc5W1DEShXUTv" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">RUNRUNRUN</div>
+            <div class="artist">Dutch Melrose</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 16 -->
+      <a href="https://youtu.be/fdJrSjMgPFE?si=bMYItDBsylwYNecM" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">LET THE WORLD BURN</div>
+            <div class="artist">Chris Grey</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 17-->
+      <a href="https://youtu.be/uQpKzPCBqc4?si=MPPajJKoU4CkJTgA" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Never Be Alone</div>
+            <div class="artist">Shadrow</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 18 -->
+      <a href="https://youtu.be/YREhVveHq9k?si=qOavFNaIv_Scgseb" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">I Got No Time</div>
+            <div class="artist">The Living Tombstone</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 19 -->
+      <a href="https://youtu.be/Q6DqUEEJtMQ?si=xAkGnLtJG5lXbQV2" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Breakin' Dishes</div>
+            <div class="artist">Rihanna</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 20 -->
+      <a href="https://youtu.be/dSIKKAgJVso?si=cJXWgzt9KTDv-C7h" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">I Want It All</div>
+            <div class="artist">Lana Del Rey</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 21 -->
+      <a href="https://youtu.be/aXz36cq08cU?si=0Sasjb0yoCv3Q83c" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">เอาเลยมั้ย</div>
+            <div class="artist">Khaotung Thanawat</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 22 -->
+      <a href="https://youtu.be/Q6DqUEEJtMQ?si=xAkGnLtJG5lXbQV2" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Вместе Мы (REMIX by budAGE)</div>
+            <div class="artist">5sta Family</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 23 -->
+      <a href="https://youtu.be/ruBsGe2HLmQ?si=4pNnZ34PRdsWFnWq" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">На небі</div>
+            <div class="artist">Океан Ельзи</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 24 -->
+      <a href="https://youtu.be/TNUs6ZgwILk?si=aVUW69pJyrVNwMFj" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">Океан</div>
+            <div class="artist">Zlata Ognevich</div>
+          </div>
+        </div>
+      </a>
+
+<!-- Карточка 25 -->
+      <a href="https://youtu.be/Q6DqUEEJtMQ?si=xAkGnLtJG5lXbQV2" target="_blank" class="track-link">
+        <div class="track">
+          <div class="track-details">
+            <div class="song">GDE PAPA (LONGMIX)</div>
+            <div class="artist">BOOKER</div>
+<div class="feat">feat. CMH, feat. mzlff, feat. СЛАВА КПСС</div>
+          </div>
+        </div>
+      </a>
+  </div> <!-- Конец wrapper -->
+
+</body>
+</html>
